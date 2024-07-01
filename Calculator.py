@@ -14,8 +14,9 @@ def btnClick(numbers):
 
 def clear_button():
     global operator
-    operator = ""
-    text_input.set(text_input.get()[0:-1])
+    text = operator[:-1]
+    operator = text
+    text_input.set(text)
 
 
 def btnClearDisplay():
@@ -28,7 +29,7 @@ def btnEqualsInput():
     global operator
     sumup = str(eval(operator))
     text_input.set(sumup)
-    operator = ""
+    operator = sumup
 
 def factorial(n):
     if n==0 or n==1:
