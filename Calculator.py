@@ -3,7 +3,7 @@ from tkinter import *
 cal = Tk()
 cal.title("ماشین حساب")
 operator = ""
-text_input = StringVar()
+text_input = StringVar()lmmlmlmlmlmlmlmlml
 
 
 def btnClick(numbers):
